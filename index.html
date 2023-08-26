@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkimBox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 40% off -->
+    <div id="firstCont">
+    <div class="card">
+      <div class="cont2">
+        <input class="Input" type="radio" name="choose" id="fourty"/>
+        <div class="cont3">
+          <span>1 Pair</span>
+          <span>DKK 195.00</span>
+        </div>
+      </div>
+      <div>40% OFF</div>
+    </div>
+    </div>
+
+    <!-- 50%off -->
+    <div id="secondCont">
+    <div class="card">
+      <div class="cont2">
+        <input class="Input" type="radio" name="choose" id="fifty"/>
+        <div class="cont3">
+          <span>2 Pair</span>
+          <span>DKK 345.00</span>
+        </div>
+      </div>
+      <div>50% OFF</div>
+    </div>
+    </div>
+
+    <!-- 60% off -->
+    <div id="thirdCont">
+    <div class="card">
+      <div class="cont2">
+        <input type="radio" name="choose" id="sixty"/>
+        <div class="cont3">
+          <span>3 Pair</span>
+          <span>DKK 528.00</span>
+        </div>
+      </div>
+      <div>60% OFF</div>
+    </div>
+    </div>
+
+    <div class="last-cont">
+      <div style="color: rgba(205, 38, 79, 1)" class="">
+        Free 2 Day Shipping
+      </div>
+      <div>
+        <span>Total :</span>
+        <span style="font-weight: bold">DKK 360.00</span>
+      </div>
+    </div>
+    
+    <div class="btn">
+         <button  style="background-color: rgba(205, 38, 79, 1);">
+      Add to Cart
+    </button>
+    </div>
+
+    <div class="footer">
+       <div class="foot-Cont">&#169 Powered by Pumper</div>
+    </div>
+
+
+
+   
+   
+
+    <script>
+      const fourty = document.querySelector("#fourty");
+      const fifty = document.querySelector("#fifty");
+      const sixty = document.querySelector("#sixty");
+
+      const firstCont = document.querySelector("#firstCont");      
+      const secondCont = document.querySelector("#secondCont");      
+      const thirdCont = document.querySelector("#thirdCont");      
+
+
+      const firstBox = `<div class="selectedCont">
+      <div class="selectInner">
+      <div class="cont2">
+        <input type="radio" name="choose" checked="true" id="fourty"/>
+        <div class="cont3">
+          <span>1 Pair</span>
+          <span>DKK 195.00</span>
+        </div>
+      </div>
+      <div style="color: gray;"><strike>DKK 195.00</strike></div>
+      <div class="cont3">
+        <span style="color: rgba(205, 38, 79, 1);">Most Popular</span>
+        <span style="font-size: 20px;">40% OFF</span>
+       </div>
+    </div>
+
+ <div class="box">
+
+   <div class="inner-box">
+        <div style="margin-top: 10px;">#1</div>
+        <div>
+         <select name="size" >
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+         </select>
+         </div>
+         <div>
+          <select name="colour" >
+          <option>colour</option>
+          <option>M</option>
+          <option>L</option>
+         </select>
+         </div>
+       </div>
+    
+    </div>`;
+      const secondBox = `<div class="selectedCont">
+      <div class="selectInner">
+      <div class="cont2">
+        <input type="radio" name="choose" checked="true" id="fifty"/>
+        <div class="cont3">
+          <span>1 Pair</span>
+          <span>DKK 195.00</span>
+        </div>
+      </div>
+      <div style="color: gray;"><strike>DKK 195.00</strike></div>
+      <div class="cont3">
+        <span style="color: rgba(205, 38, 79, 1);">Most Popular</span>
+        <span style="font-size: 20px;">40% OFF</span>
+       </div>
+    </div>
+
+ <div class="box">
+
+   <div class="inner-box">
+        <div style="margin-top: 10px;">#1</div>
+        <div>
+         <select name="size" >
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+         </select>
+         </div>
+         <div>
+          <select name="colour" >
+          <option>colour</option>
+          <option>M</option>
+          <option>L</option>
+         </select>
+         </div>
+       </div>
+     
+
+     
+     <div class="inner-box">
+        <div style="margin-top: 10px;">#2</div>
+        <div>
+         <select name="size" >
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+         </select>
+         </div>
+         <div>
+          <select name="colour" >
+          <option>colour</option>
+          <option>M</option>
+          <option>L</option>
+         </select>
+         </div>
+       </div>
+    </div>`;
+      const thirdBox = `<div class="selectedCont">
+      <div class="selectInner">
+      <div class="cont2">
+        <input type="radio" name="choose" checked="true" id="sixty"/>
+        <div class="cont3">
+          <span>1 Pair</span>
+          <span>DKK 195.00</span>
+        </div>
+      </div>
+      <div style="color: gray;"><strike>DKK 195.00</strike></div>
+      <div class="cont3">
+        <span style="color: rgba(205, 38, 79, 1);">Most Popular</span>
+        <span style="font-size: 20px;">40% OFF</span>
+       </div>
+    </div>
+
+ <div class="box">
+
+   <div class="inner-box">
+        <div style="margin-top: 10px;">#1</div>
+        <div>
+         <select name="size" >
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+         </select>
+         </div>
+         <div>
+          <select name="colour" >
+          <option>colour</option>
+          <option>red</option>
+          <option>blue</option>
+         </select>
+         </div>
+       </div>
+
+
+   <div class="inner-box">
+        <div style="margin-top: 10px;">#2</div>
+        <div>
+         <select name="size" >
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+         </select>
+         </div>
+         <div>
+          <select name="colour" >
+          <option>colour</option>
+          <option>red</option>
+          <option>blue</option>
+         </select>
+         </div>
+       </div>
+     
+
+     
+     <div class="inner-box">
+        <div style="margin-top: 10px;">#3</div>
+        <div>
+         <select name="size" >
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+         </select>
+         </div>
+         <div>
+          <select name="colour" >
+          <option>colour</option>
+          <option>red</option>
+          <option>blue</option>
+         </select>
+         </div>
+       </div>
+    </div>`;
+
+      const firstPrev = `<div class="card">
+      <div class="cont2">
+        <input class="Input" type="radio" name="choose" id="fourty"/>
+        <div class="cont3">
+          <span>1 Pair</span>
+          <span>DKK 195.00</span>
+        </div>
+      </div>
+      <div>40% OFF</div>
+    </div>`;
+      const secondPrev = `<div class="card">
+      <div class="cont2">
+        <input class="Input" type="radio" name="choose" id="fifty"/>
+        <div class="cont3">
+          <span>2 Pair</span>
+          <span>DKK 345.00</span>
+        </div>
+      </div>
+      <div>50% OFF</div>
+    </div>`;
+      const thirdPrev = `<div class="card">
+      <div class="cont2">
+        <input type="radio" name="choose" id="sixty"/>
+        <div class="cont3">
+          <span>3 Pair</span>
+          <span>DKK 528.00</span>
+        </div>
+      </div>
+      <div>60% OFF</div>
+    </div>`;
+
+    
+    
+    fourty.addEventListener("click",()=>{
+        console.log(fourty.value,fifty.value,sixty.value);
+        firstCont.innerHTML = firstBox; 
+        
+          fifty.checked = false;
+          // secondCont.innerHTML = secon dPrev;
+        
+          sixty.checked = false;
+          // thirdCont.innerHTML = thirdPrev;
+      })
+
+      fifty.addEventListener("click",()=>{
+        console.log(fourty.value,fifty.value,sixty.value);
+        secondCont.innerHTML = secondBox;
+        
+          // fourty.checked = false;
+          // firstCont.innerHTML = firstPrev;
+        
+        
+          // sixty.checked = false;
+          // thirdCont.innerHTML = thirdPrev;
+        
+      })
+      
+      
+      sixty.addEventListener("click",()=>{
+        console.log(fourty.value,fifty.value,sixty.value);
+        thirdCont.innerHTML = thirdBox;
+ 
+          // fourty.checked = false;
+          // firstCont.innerHTML = firstPrev;
+        
+        
+          // fifty.checked = false;
+          // secondCont.innerHTML = secondPrev;
+    
+      })
+
+      
+
+    </script>
+
+
+  </body>
+</html>
